@@ -1,0 +1,50 @@
+{
+  "name": "stable_nuxt_typescript_koa",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "dev": "backpack dev",
+    "build": "nuxt build && backpack build",
+    "build-nuxt": "nuxt build",
+    "build-server": "backpack build",
+    "start": "cross-env NODE_ENV=production nodemon build/main.js --watch server",
+    "lint": "eslint --ext .ts,.vue --ignore-path .gitignore ."
+  },
+  "dependencies": {
+    "@nuxt/typescript": "^2.8.1",
+    "@nuxtjs/axios": "^5.8.0",
+    "@nuxtjs/eslint-config": "^0.0.1",
+    "consola": "^2.10.1",
+    "cross-env": "^6.0.3",
+    "dotenv": "^8.2.0",
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-multer": "^1.0.2",
+    "koa-router": "^7.4.0",
+    "nodemon": "^1.19.4",
+    "nuxt": "2.8.1",
+    "nuxt-property-decorator": "^2.5.0",
+    "ts-node": "^8.4.1",
+    "vuex-class": "^0.3.2"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.7.0",
+    "@babel/plugin-proposal-decorators": "^7.7.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@nuxtjs/eslint-config-typescript": "^0.1.3",
+    "@types/koa": "^2.0.52",
+    "@types/koa-bodyparser": "^4.3.0",
+    "@types/koa-router": "^7.0.42",
+    "@types/node": "^12.12.7",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-eslint": "^10.0.3",
+    "backpack-core": "^0.8.3",
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-loader": "^3.0.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-vue": "^6.0.0",
+    "prettier": "^1.19.1"
+  }
+}
