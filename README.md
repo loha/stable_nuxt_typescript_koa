@@ -12,7 +12,7 @@ The project has such tuned technologies:
     e) Typescript. Implemented using backpack-core. You can configure webpack options in backpack.config.js file.
     
 2. Nuxt:<br/>
-    a) Nuxt typescript(@nuxt/typescript@2.8.1);<br />
+    a) Nuxt typescript(@nuxt/typescript-build@^0.3.4);<br />
     b) nuxt-property-decorator;<br />
     c) vuex-class.
 

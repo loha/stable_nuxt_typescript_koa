@@ -6,7 +6,7 @@ import config from '../nuxt.config';
 const app = new Koa();
 config.dev = app.env !== 'production';
 
-async function start() {
+async function start () {
   // Instantiate nuxt.js
   const nuxt = new Nuxt(config);
 
@@ -20,7 +20,7 @@ async function start() {
     await nuxt.ready();
   }
 
-  app.use(ctx => {
+  app.use((ctx) => {
     ctx.status = 200;
     ctx.respond = false; // Bypass Koa's built-in response handling
     // @ts-ignore
